@@ -3,19 +3,14 @@ import java.util.Random;
 
 public class Randomizer {
 
-    // Takes string and puts into array
-    protected static Character[] stringToArray(String s) {
+    // Iterate through string and randomize
+    protected static String makeRandom(String s) {
+        // Create array 
         Character[] charArray = new Character[s.length()];
         // Iterate through string and input into array
         for (int i = 0; i < s.length(); i++) {
             charArray[i] = s.charAt(i);
         }
-
-        return charArray;
-    }
-
-    // Iterate through string and randomize
-    protected static String makeRandom(Character[] charArray) {
         // Return string primed
         String randomString = "";
         // Iterate through array and create a string
